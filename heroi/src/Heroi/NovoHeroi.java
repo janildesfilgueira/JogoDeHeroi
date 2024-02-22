@@ -1,14 +1,13 @@
 package Heroi;
 
 public class NovoHeroi {
-    private String nome,tipo,atacar;
+    private String nome,tipo;
     private Integer idade;
 
-    public NovoHeroi(String nome, Integer idade, String tipo, String atacar){
+    public NovoHeroi(String nome, Integer idade, String tipo){
         this.nome   = nome;
         this.idade  = idade;
         this.tipo   = tipo;
-        this.atacar = atacar;
     }
 
     public String getNome() {
@@ -16,7 +15,7 @@ public class NovoHeroi {
     }
 
     public void setNome(String nome){
-        this.nome=nome;
+        this.nome = nome;
     }
 
     public Integer getIdade(){
@@ -24,7 +23,7 @@ public class NovoHeroi {
     }
 
     public void SetIdade(Integer idade){
-        this.idade=idade;
+        this.idade = idade;
 
     }
 
@@ -33,15 +32,11 @@ public class NovoHeroi {
     }
 
     public void SetTipo(String Tipo){
-        this.tipo=Tipo;
+        this.tipo = Tipo;
     }
 
-    public String getatacar(){
-        return this.atacar;
-    }
-
-    public void SetAtacar(String Atacar){
-        this.atacar= Atacar;
+    public void atacar(){
+        System.out.println("O {tipo} atacou usando {ataque}");
     }
 
 }
