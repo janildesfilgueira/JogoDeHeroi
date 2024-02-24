@@ -1,5 +1,6 @@
 import Heroi.Tipos.Guerreiro;
 import Heroi.Tipos.Mago;
+import Heroi.Tipos.Monge;
 import Heroi.Tipos.Ninja;
 
 public class App {
@@ -14,6 +15,10 @@ public class App {
 
         Ninja ninja = new Ninja ("Ieleny",28);
         ninja.atacar();
+
+        Monge monge = new Monge ( "Isabele", 12);
+        monge.atacar();
+
     }
     
 }
